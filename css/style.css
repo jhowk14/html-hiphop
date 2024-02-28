@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    color: #ccc;
+    text-align: center;
+    width: 50%;
+    margin-top: 19px;
+    display: block;
+}
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(11, 11, 11);
+    color: white;
+}
+
+p, h1 {
+    text-shadow: 2px 2px 4px rgba(144, 144, 144, 0.5); /* Sombra com deslocamento de 2px na horizontal e 2px na vertical, desfoque de 4px e cor preta com 50% de transparência */
+}
+
+header {
+    background-color: rgb(215, 215, 215);
+    justify-content: center;
+    display: flex;
+    padding: 10px 0;
+}
+
+footer{
+    background-color: rgb(215, 215, 215);
+    justify-content: center;
+    display: flex;
+    padding: 10px 10px;
+}
+.footer-content {
+    color: black;
+}
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.img-content {
+    border-radius: 5%;
+    border: 5px solid black;
+    width: 50%; /* Definindo a largura como 80% do viewport */
+}
+
+/* Estilos para tornar o layout mais responsivo */
+@media only screen and (max-width: 600px) {
+    .container-img {
+        flex-direction: column; /* Altera a direção do flex para empilhar em dispositivos menores */
+    }
+}
