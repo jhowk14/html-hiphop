@@ -5,45 +5,55 @@
 
 h1 {
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 4vw; /* Tamanho da fonte responsivo */
     font-weight: bold;
     color: #fff;
     text-align: center;
 }
 
+main {
+    background-image: url(../img/bg.avif);
+}
+
 p {
-    font-size: 25px;
+    font-size: 2.5vw; /* Tamanho da fonte responsivo */
     color: #ccc;
     text-align: center;
-    width: 50%;
+    width: 90%; /* Ajuste da largura para dispositivos menores */
     margin-top: 19px;
     display: block;
 }
+
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgb(11, 11, 11);
     color: white;
 }
 
-p, h1 {
+p, h1, span {
     text-shadow: 2px 2px 4px rgba(144, 144, 144, 0.5); /* Sombra com deslocamento de 2px na horizontal e 2px na vertical, desfoque de 4px e cor preta com 50% de transparência */
 }
 
-header {
+footer {
     background-color: rgb(215, 215, 215);
     justify-content: center;
     display: flex;
     padding: 10px 0;
 }
 
-footer{
+header div {
     background-color: rgb(215, 215, 215);
     justify-content: center;
     display: flex;
-    padding: 10px 10px;
+    padding: 10px 0;
 }
+
 .footer-content {
     color: black;
+}
+.header-content {
+    color: black;
+    font-size: 4vw;
 }
 .container-img {
     display: flex;
@@ -54,14 +64,26 @@ footer{
 }
 
 .img-content {
-    border-radius: 5%;
-    border: 5px solid black;
-    width: 50%; /* Definindo a largura como 80% do viewport */
+    border-radius: 3%;
+    border: 2px solid #ccc;
+    width: 80%; /* Definindo a largura como 80% do viewport */
 }
 
 /* Estilos para tornar o layout mais responsivo */
 @media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 6vw; /* Ajuste do tamanho da fonte para dispositivos menores */
+    }
+    
+    p {
+        font-size: 4vw; /* Ajuste do tamanho da fonte para dispositivos menores */
+    }
+
     .container-img {
         flex-direction: column; /* Altera a direção do flex para empilhar em dispositivos menores */
+    }
+
+    .img-content {
+        width: 90%; /* Ajuste da largura da imagem para dispositivos menores */
     }
 }
